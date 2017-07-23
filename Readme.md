@@ -50,7 +50,7 @@ Code: {mytidydata <- myfinaldata %>% group_by_("Subject", "Activity_Description"
 7. Replacing the Parenthesis
 Code: {names(mytidydata) <- gsub("\\(\\)", "", names(mytidydata))}
 
-8. Returning the Tidy Data Set
-Code: {return(mytidydata)}
+8. Writing the Tidy Data Set to a text file
+Code: {write.table(mytidydata, file = "C:\\Users\\Amit\\Desktop\\R_Submissions\\Data Cleaning Project\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset\\tidydataset.txt", row.names = FALSE)}
 
 }
