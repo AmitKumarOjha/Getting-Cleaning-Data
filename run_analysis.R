@@ -49,6 +49,6 @@ mytidydata <- myfinaldata %>% group_by_("Subject", "Activity_Description") %>% s
 # Replacing the Parenthesis
 names(mytidydata) <- gsub("\\(\\)", "", names(mytidydata))
 
-return(mytidydata)
+write.table(mytidydata, file = "C:\\Users\\Amit\\Desktop\\R_Submissions\\Data Cleaning Project\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset\\tidydataset.txt", row.names = FALSE)
 
 }
